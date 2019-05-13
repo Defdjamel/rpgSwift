@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1AB968332289C2AC00F05149 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB968322289C2AC00F05149 /* main.swift */; };
+		1AB9683B2289C44100F05149 /* Personnage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB9683A2289C44100F05149 /* Personnage.swift */; };
+		1AB9683D2289C59A00F05149 /* Arme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB9683C2289C59A00F05149 /* Arme.swift */; };
+		1AB9683F228A09FD00F05149 /* PersoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB9683E228A09FD00F05149 /* PersoType.swift */; };
+		1AB96841228A138D00F05149 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB96840228A138D00F05149 /* Game.swift */; };
+		1AB96843228A163800F05149 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB96842228A163800F05149 /* Team.swift */; };
+		1AB96845228A218F00F05149 /* ActionPersoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB96844228A218F00F05149 /* ActionPersoType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		1AB9682F2289C2AC00F05149 /* OC_P3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OC_P3; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB968322289C2AC00F05149 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1AB9683A2289C44100F05149 /* Personnage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personnage.swift; sourceTree = "<group>"; };
+		1AB9683C2289C59A00F05149 /* Arme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arme.swift; sourceTree = "<group>"; };
+		1AB9683E228A09FD00F05149 /* PersoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersoType.swift; sourceTree = "<group>"; };
+		1AB96840228A138D00F05149 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		1AB96842228A163800F05149 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		1AB96844228A218F00F05149 /* ActionPersoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionPersoType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,31 @@
 		1AB968312289C2AC00F05149 /* OC_P3 */ = {
 			isa = PBXGroup;
 			children = (
+				1AB96846228A219700F05149 /* Constants */,
+				1AB968392289C31000F05149 /* Model */,
 				1AB968322289C2AC00F05149 /* main.swift */,
 			);
 			path = OC_P3;
+			sourceTree = "<group>";
+		};
+		1AB968392289C31000F05149 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1AB9683A2289C44100F05149 /* Personnage.swift */,
+				1AB9683C2289C59A00F05149 /* Arme.swift */,
+				1AB96842228A163800F05149 /* Team.swift */,
+				1AB96840228A138D00F05149 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AB96846228A219700F05149 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1AB9683E228A09FD00F05149 /* PersoType.swift */,
+				1AB96844228A218F00F05149 /* ActionPersoType.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB96843228A163800F05149 /* Team.swift in Sources */,
+				1AB9683D2289C59A00F05149 /* Arme.swift in Sources */,
+				1AB96841228A138D00F05149 /* Game.swift in Sources */,
+				1AB9683F228A09FD00F05149 /* PersoType.swift in Sources */,
 				1AB968332289C2AC00F05149 /* main.swift in Sources */,
+				1AB9683B2289C44100F05149 /* Personnage.swift in Sources */,
+				1AB96845228A218F00F05149 /* ActionPersoType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,9 +284,11 @@
 		1AB968372289C2AC00F05149 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39UPL288JM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -254,9 +296,11 @@
 		1AB968382289C2AC00F05149 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39UPL288JM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
